@@ -3,17 +3,25 @@
       <div class="mb-3">
         <label for="form-label">Name</label>
         <input wire:model="name" type="text" class="form-control">
-        @error('name')<span class="text-danger">{{message}}</span>
+        <div>
+          @error('name')<span class="text-danger">{{$message}}</span>@enderror
+        </div>        
       </div>
 
       <div class="mb-3">
         <label for="form-label">Email</label>
         <input wire:model="email" type="email" class="form-control">
+        <div>
+          @error('email')<span class="text-danger">{{$message}}</span>@enderror
+        </div> 
       </div>
 
       <div class="mb-3">
         <label for="form-label">Password</label>
-        <input wire:model="password" type="password" class="form-control">
+        <input wire:model.live.debounce.150ms="password" type="password" class="form-control">
+        <div>
+          @error('password')<span class="text-danger">{{$message}}</span>@enderror
+        </div> 
       </div>
 
       <button type="submit" class="btn btn-primary ">
