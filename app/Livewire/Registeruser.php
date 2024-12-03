@@ -47,7 +47,7 @@ class Registeruser extends Component
           'email'=>'required|unique:users|email',
           'password'=>'required|min:5'  
         ],
-        ['required'=>'The :attribute field is required']
+        ['required'=>'Поле :attribute обов`язкове']
       )->validated();
       dd(123);
     }
