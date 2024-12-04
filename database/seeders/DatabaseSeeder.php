@@ -29,14 +29,22 @@ class DatabaseSeeder extends Seeder
     //  Structure::factory(10)
     //  ->has(Unit::factory(rand(1, 3)))
     //  ->create();   
+<<<<<<< HEAD
 
 
 
+=======
+   
+>>>>>>> 9e6fdb3e1f597003337ec6a8280fb316035da56d
     $this->call([
       // BrandSeeder::class,
       // DevtypeSeeder::class,
       // DeviceSeeder::class,
+<<<<<<< HEAD
 
+=======
+      UnitypeSeeder::class,
+>>>>>>> 9e6fdb3e1f597003337ec6a8280fb316035da56d
       UnitSeeder::class,
       // PostSeeder::class,
       // StateSeeder::class,
