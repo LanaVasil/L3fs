@@ -13,6 +13,7 @@
         @vite(['resources/sass/app.scss', 'resources/js/app.js'])
     </head>
     <body>
+      <livewire:nav-bar/>
       <div class="container">
         <h1>jdksfljdskfjdslk</h1>
 {{-- @if (Route::has('login'))
