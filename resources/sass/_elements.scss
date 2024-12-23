@@ -1,0 +1,85 @@
+// z-index - перелік
+// #progress / z-index: 1000;
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    min-width: 320px;
+    font-size: 16px;
+    font-family: var(--font-family-base);
+    line-height: 26px;
+    font-weight: 400;
+    font-style: normal;
+    background-color: var(--bg-color);
+    color: var(--bs-dark);
+}
+
+.wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.main.main {
+    flex: 1 1 auto;
+}
+// h1,
+// h6,
+// h6 > ul > li > a {
+//     font-family: var(--font-family-accent);
+// }
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.dropdown-toggle::after {
+    content: "\F282";
+    font-family: bootstrap-icons !important;
+    font-weight: 900;
+    font-size: 0.9rem;
+    // розташувала стрелку посередині іконки
+    vertical-align: -0.125em;
+    border: 0;
+}
+
+// display: inline-block;
+//     font-family: bootstrap-icons !important;
+//     font-style: normal;
+//     font-weight: normal !important;
+//     font-variant: normal;
+//     text-transform: none;
+//     line-height: 1;
+//     vertical-align: -.125em;
+//     -webkit-font-smoothing: antialiased;
+
+/* ==================/ General==================== */
+
+.form-label {
+    margin-bottom: 0;
+}
+.form-control::placeholder {
+    color: var(--bs-gray-500);
+}
+
+// .navbar-side ul .bi-navbar,
+// // .dropdown-toggle .bi-navbar::before,
+// .bi-navbar {
+//     font-size: 1.5rem;
+// }
+
+.table > :not(caption) > * > * {
+    padding: 0.25rem 0.5rem;
+}
+
+.btn {
+    border-radius: 0;
+}
+
+// отступи на форме для chk
+.card-body {
+    padding: 0.5rem 0.5rem;
+}

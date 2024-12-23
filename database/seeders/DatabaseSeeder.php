@@ -16,7 +16,7 @@ class DatabaseSeeder extends Seeder
   {
     // --Строрюємо User - користувачів --
     // --варіант 1 
-    // User::factory(3)->create();
+    User::factory(50)->create();
 
     // --варіант 2
     // User::factory()->create([
@@ -25,26 +25,20 @@ class DatabaseSeeder extends Seeder
     // ]);
     // --/Строрюємо User - користувачів
 
-    // створюємо 30-Structure и для кожного рандомно від 1 до 3 - Post
-    //  Structure::factory(10)
-    //  ->has(Unit::factory(rand(1, 3)))
-    //  ->create();   
-<<<<<<< HEAD
+    // створюємо 15-UnitType и для кожного рандомно від 5 до 10 - Post
+    // UnitType::factory(15)
+    //   ->has(Unit::factory(rand(5,10)))
+    //   ->create(); 
+    // }
+    // Unit::factory(50)
+    // ->create(); 
+    // }   
 
 
-
-=======
-   
->>>>>>> 9e6fdb3e1f597003337ec6a8280fb316035da56d
     $this->call([
-      // BrandSeeder::class,
-      // DevtypeSeeder::class,
-      // DeviceSeeder::class,
-<<<<<<< HEAD
-
-=======
-      UnitypeSeeder::class,
->>>>>>> 9e6fdb3e1f597003337ec6a8280fb316035da56d
+      BrandSeeder::class,
+      DevTypeSeeder::class,
+      DeviceSeeder::class,
       UnitSeeder::class,
       // PostSeeder::class,
       // StateSeeder::class,

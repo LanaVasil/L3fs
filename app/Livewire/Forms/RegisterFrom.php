@@ -2,12 +2,14 @@
 
 namespace App\Livewire\Forms;
 
-use Livewire\Attributes\Rule;
+use Livewire\Attributes\Validate;
 use Livewire\Form;
+use Livewire\Attributes\Rule;
+use App\Livewire\Users\RegisterUser;
 
 class RegisterFrom extends Form
 {
-  #[Rule('required')]
+  #[Rule('required|min:2')]
   public $name;
 
   #[Rule('required|email')]  

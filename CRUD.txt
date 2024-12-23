@@ -1,0 +1,8 @@
+php artisan make:model Car -m
+
+php artisan livewire:layout
+
+php artisan livewire:make CarList
+
+php artisan livewire:make AddCar
+php artisan livewire:make EditCar

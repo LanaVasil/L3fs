@@ -1,0 +1,5 @@
+<div>
+    <h1>{{$this->titlePage}}</h1>
+
+    {{-- [quote] --}}
+</div>
