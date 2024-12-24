@@ -16,7 +16,7 @@
                                           {{-- bg-dark data-bs-theme="dark" --}}
                                           {{-- sticky-top --}}
   {{-- <nav class="navbar navbar-expand-lg top-navbar bg-dark" data-bs-theme="dark">  --}}
-  <nav class="navbar navbar-expand-lg top-navbar" > 
+  <nav class="navbar navbar-expand-lg top-navbar" >
     <div class="container">
       <a class="top-line__logo d-block d-lg-none" href="index.html">
         <img src="logo.svg" alt="" />
@@ -24,7 +24,7 @@
       <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Переключить навигацию">
         <span class="navbar-toggler-icon"></span>
       </button>
-  
+
 
       <div class="offcanvas offcanvas-start" id="offcanvasNavbar">
 
@@ -32,8 +32,8 @@
           <h5 class="offcanvas-title" id="offcanvasNavbarLabel">ДУ ЦОП</h5>
           <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Закрыть"></button>
         </div>
-    
-        
+
+
         <div class="offcanvas-body">
         <ul class="navbar-nav me-lg-auto mb-2 mb-lg-0">
           <li class="nav-item dropdown has-megamenu">
@@ -109,12 +109,12 @@
             <a class="nav-link" href="#">Сервіс</a>
           </li>
           <li class="nav-item">
-            <a wire:navigate class="{{request()->is('users')?'nav-link active':'nav-link'}}"  href="/users">User</a>            
+            <a wire:navigate class="{{request()->is('users')?'nav-link active':'nav-link'}}"  href="/users">User</a>
         </li>
           <li class="nav-item">
-            <a wire:navigate class="{{request()->is('counter')?'nav-link active':'nav-link'}}"  href="/counter">Counter</a>            
+            <a wire:navigate class="{{request()->is('counter')?'nav-link active':'nav-link'}}"  href="/counter">Counter</a>
         </li>
-      
+
         <li class="nav-item">
           <a wire:navigate class="{{request()->is('register')?'nav-link active':'nav-link'}}" href="/register">{{ __('Register') }}</a>
         </li>
@@ -124,13 +124,16 @@
         <li class="nav-item">
           <a wire:navigate class="{{request()->is('devices')?'nav-link active':'nav-link'}}" href="/devices">{{ __('Пристрої') }}</a>
         </li>
+        <li class="nav-item">
+          <a wire:navigate class="nav-link {{ active_link('active_link.devices') }}" href="/devices">{{ __('Пристрої') }}</a>
+        </li>
         {{-- Перемикач День / Ніч  --}}
         <div class="form-check form-switch">
           <input wire:model.live="mode" class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked">
           <label class="form-check-label" for="flexSwitchCheckChecked">{{$type}}</label>
         </div>
-        
-        </ul>              
+
+        </ul>
         </div> <!-- ./offcanvas-body -->
 
       </div>
